@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: inherit;
+  -webkit-box-direction: inherit;
+      -ms-flex-direction: inherit;
+          flex-direction: inherit;
+  overflow: hidden;
+  min-height: 100vh;
+  background: steelblue;
+  color: white;
+}
+
+.container {
+  padding: 20px 40px;
+  border-radius: 5px;
+  background: #155e99;
+}
+
+.container h1 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.container a {
+  color: #72afe0;
+  text-decoration: none;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background: lightblue;
+  padding: 15px;
+  margin-left: 25%;
+  width: 50%;
+  font-size: 16px;
+  border: 0;
+  border-radius: 3px;
+  font-family: inherit;
+  font-weight: bold;
+  outline: none;
+}
+
+.btn:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+p {
+  margin: 25px;
+  padding-left: 15px;
+}
+
+.form-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  width: 100%;
+  padding: 15px 0 15px;
+  font-size: 18px;
+  outline: none;
+  border-radius: 6px;
+  color: white;
+}
+
+.form-control input:focus, .form-control input:valid {
+  outline: 0;
+  color: lightblue;
+  border-bottom-color: lightblue;
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: lightblue;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  -webkit-transition: 0.3s cubic-bezier(0.17, 0.87, 0.46, 1.5);
+  transition: 0.3s cubic-bezier(0.17, 0.87, 0.46, 1.5);
+}
+/*# sourceMappingURL=style.css.map */

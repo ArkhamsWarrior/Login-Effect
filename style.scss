@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: inherit;
+    overflow: hidden;
+    min-height: 100vh;
+    background: steelblue;
+    color: white;
+    
+}
+.container{
+    padding: 20px 40px;
+    border-radius: 5px;
+    background: rgb(21, 94, 153);
+}
+
+.container h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.container a {
+    color:rgb(114, 175, 224);
+    text-decoration: none;
+}
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    background: lightblue;
+    padding: 15px;
+    margin-left: 25%;
+    width: 50%; 
+    font-size: 16px;
+    border: 0;
+    border-radius: 3px;
+    font-family: inherit;
+    font-weight: bold;
+    outline: none; 
+    &:active{
+        transform: scale(.97)
+    }
+}
+p  {
+    margin: 25px;
+    padding-left: 15px;
+}
+.form-control{
+    position: relative; 
+    margin: 20px 0 40px; 
+    width: 300px;
+    
+}
+.form-control input{
+    background-color: transparent;
+    border:0;
+    border-bottom: 2px #fff solid;
+    width: 100%;
+    padding: 15px 0 15px;
+    font-size: 18px;
+outline: none;
+border-radius: 6px;
+
+color: white;
+&:focus, &:valid{
+    outline: 0;
+    color: lightblue;
+    border-bottom-color: lightblue;
+    
+}
+}
+.form-control input:focus + label span , 
+.form-control input:valid + label span{
+    color: lightblue;
+    transform: translateY(-30px);   
+}
+.form-control label {
+    position: absolute; 
+    top: 15px;
+    left: 0;
+    span{
+    
+        display: inline-block;
+        font-size: 18px;
+        min-width: 5px;
+        transition: 0.3s cubic-bezier(.17,.870,.46,1.5);
+        //(smoothness of travel, speed of travel + height of travel, speed of travel, maximum amount it bounces up)
+        //(start of curve, , end of curve,)
+    }
+
+}
+
+
